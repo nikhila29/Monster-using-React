@@ -1,0 +1,139 @@
+React has component.
+One Main Component(ex :App.js)  contains nested components(ex: sidebar component, navbar component, main content component)
+Component describe the UI --They are re-usable, can be nested inside other components
+Components are 2 types----stateless Fuctional component  and  stateful Class componenet'
+
+stateless Fuctional component ex:
+
+        function Welcome(props) {
+            return <h1> Hello , {props.name}</h1>
+        }
+    
+stateful Class component --- class extending Component class render method returning HTML  ex:
+
+    class Welcome extends React.Component {
+        render() {
+            return <h1> Hello, {this.props.name}</h1>
+        }
+    }
+
+Functional components :
+
+        Properties(props)------> Javascript Function -----> HTML(JSX)
+
+
+ //  Shortcut to write react code
+Install extension(vscode)-- Reactjs code snippets (charalampos karypidis)
+-> means Tab 
+rcc->  == class component skeleton
+rsc->  == stateless component skeleton
+rsf->  == stateless named function skeleton
+rce--> class componenet
+rconst-----constructor
+
+To see more, visit-- https://marketplace.visualstudio.com/items?itemName=xabikos.ReactSnippets
+
+Class component is a ES6 component 
+
+        Properties(props) ---->  ES6 class(State) --------> HTML(JSX)
+
+                    Fuctional component                                 VS                                             Class components
+
+1. simple function and 1st preference                                                  1.More feature rich
+2.Use Func componenets as much as possible                                             2.Maintain their own private data-state
+3.absence of this keyword                                                              3.Complete UI logic
+4.solution without using state                                                         4.Provide lifecycle hooks
+5.Mainly responsible for the UI                                                        5.Stateful/Smart /Container
+6.functional componenet also called as stateless/dumb/presentational
+7.Provide Hooks in React 16.7.0 version
+{props.tagname  }                                                                           {this.props.tagname}
+
+
+                                                                Hooks
+
+                        1.No breaking changes.
+                        2.Completely opt-in & 100% backwards-compatible.
+                        3.What ever we've learned so far in this series still holds good.
+                        4.Componenet types- Functional componenets and Class componenets.
+                        5.Using state,lifecycle methods and'this' binding.
+                        6.After understnding stat, event binding and lifecycle hooks in class components.
+
+
+                                                                    JSX(javascript XML)
+
+                        1.It is extension to the javascript language syntax.
+                        2.Write XML -like code for elements and componenets.
+                        3.JSX tags have a tag name, attributes , and children.
+                        4.JSX is not a necessity to write React applications.
+                        5.JSX makes your react code simpler and elegant.
+                        6.JSX ultimately transpiles to pure javascript which is understood by the browsers.
+
+
+JSX Differences:::::
+
+Class --> className
+for --> htmlFor
+
+camelCase property naming convention
+    *onclick --> onclick
+    *tabindex --> tabIndex
+
+
+
+                                props                                    VS                                 State
+
+            1.props get passed to the componenet                                                 1.state is managed within the componenet
+            2.Function paramaeters                                                               2.Variables declared in the function body
+            3.props are immutable                                                                3.state can be changed
+            4.props--Functional components                                                       4.useState Hook --Functional componenets      
+            ths.props--Class Components                                                             this.state--Class components
+
+
+
+SetState-----------------
+
+1.Always make use of setState and never modify the state directly.
+2.Code has to be executed after the state has been updated ? Place that code in the call back function which is the second argumenet 
+to the setState method.
+3.When you have to update stte based on the previous state value, pass in a function as an argument instead of the regular object.
+
+"""""""""""Promises""""""""""":
+
+Main benefits of Promises----
+
+We are able to control separation of successful API call from an unsuccessful API call 
+
+---------------------------------------------------------------------------------Map-----------------------------------------------------------------------
+
+map() creates a new array from calling a function for every array element.
+
+map() calls a function once for each element in an array.
+
+map() does not execute the function for empty elements.
+
+map() does not change the original array.
+
+
+what are props??----------------------------------------
+props are pretty much hand sure for properties,  which are identical to the different properties that we already used inside that
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
